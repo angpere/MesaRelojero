@@ -1,0 +1,61 @@
+.contenedor_pieza {
+    display: table;
+    margin: 3px 5px 5px 10px;   /*up left down rigth*/ 
+}
+
+.una_pieza_4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(30px * 3 + 9px);
+    color: Black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.una_pieza_3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(30px * 2 + 19px); 
+    color: Black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.una_pieza_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(30px * 2 + 1px); 
+    height: calc(30px * 2 + 16px);  
+    color: Black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.una_letra{
+    width: 23px;
+    height: 23px;
+    background: #eee;
+    display: inline-block;
+    border:black 0.1px ridge;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.una_letra_vacia{
+    width: 24.5px;
+    height: 23.5px;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+}

@@ -1,0 +1,11 @@
+.ComoJugarFondo {
+    display: flex;
+    background-image: url("../images/como_jugar.png");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 95vh;
+    width: 100%;
+    top: 15%;
+}

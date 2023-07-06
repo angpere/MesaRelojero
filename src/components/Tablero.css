@@ -1,0 +1,44 @@
+#tablero {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(30px * 27 + 43.5px); 
+    height: calc(30px * 10 + 16px);  
+    background-color: white;
+    border:black 3px solid;
+    color: Black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    z-index: 20;
+}
+
+#tablero_280 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(30px * 28 + 44.8px); 
+    height: calc(30px * 10 + 16px);  
+    background-color: white;
+    border:black 3px solid;
+    color: Black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    z-index: 20;
+}
+
+.bloque_tablero {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    display: inline-block;
+    border:black 0.1px ridge;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    z-index: 20;
+    transition: background-color .3s ease;
+    background-color: transparent;
+}

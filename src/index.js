@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "./views/Home.jsx";
+import Niveles from "./views/Niveles.jsx";
+import ComoJugar from "./views/ComoJugar.jsx";
+import Ranking from "./views/Ranking.jsx";
+import InfoJuego from "./views/InfoJuego.jsx";
+import RankingNivel from "./views/RankingNivel.jsx";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+render(
+  <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/niveles" element={<Niveles />} />
+        <Route exact path="/nivel/:nivelId" element={<InfoJuego />} />
+        <Route exact path="/ranking" element={<Ranking />} />
+        <Route exact path="/ranking/nivel/:nivelId" element={<RankingNivel />} />
+        <Route exact path="/comojugar" element={<ComoJugar />} />
+      </Routes>
+    </BrowserRouter>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

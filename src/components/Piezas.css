@@ -1,0 +1,5 @@
+.muchas_piezas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 0px; /*up left down rigth*/  
+}
