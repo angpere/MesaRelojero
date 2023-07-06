@@ -17,7 +17,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig, {
+  experimentalForceLongPolling: true, // this line
+  useFetchStreams: false, // and this line
+});
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
